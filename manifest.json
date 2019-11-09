@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Docs Notifier",
+	"version": "0.1",
+	"icons": {
+		"48": "icons/48.png"
+	},
+	"description": "notifies the user if a doc that they are on is being edited",
+	"content_scripts": [
+		{
+			"matches": ["*://*.google.com"],
+			"js": ["notifier.js"]
+		}
+	]
+}
